@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/img_1"/>
+
+    <ImageView
+        android:id="@+id/img_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_2"
+        android:layout_below="@id/img_1"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get things done with TODo"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:layout_below="@id/img_2"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the , "
+        android:textSize="12sp"
+        android:fontFamily="@font/poppinsregular"
+        android:layout_below="@id/tv_title"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="login"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:width="300dp"
+        android:padding="10dp"
+        android:fontFamily="@font/poppinsbold"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:layout_below="@id/tv_desc"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_shape"
+        />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="register"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:width="300dp"
+        android:padding="10dp"
+        android:fontFamily="@font/poppinsbold"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:layout_below="@id/btn_login"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_shape"
+        />
+
+
+</RelativeLayout>
